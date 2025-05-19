@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_base_getx/helper/routes_helper.dart';
 import 'package:flutter_base_getx/utils/colors.dart';
+import 'package:flutter_base_getx/utils/style.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: false,
         primarySwatch: const MaterialColor(0x306A99, primaryColor),
+        fontFamily: poppins,
         pageTransitionsTheme: const PageTransitionsTheme(
           builders: {
             TargetPlatform.android: CupertinoPageTransitionsBuilder(),
