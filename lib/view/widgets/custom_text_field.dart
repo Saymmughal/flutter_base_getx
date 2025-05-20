@@ -77,11 +77,7 @@ class CustomTextField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         label != null
-            ? label!.toText(
-              fontSize: 12,
-              fontWeight: w400,
-              color: whitePrimary,
-            )
+            ? label!.to12W400Text(color: whitePrimary)
             : const SizedBox(),
         label != null ? 2.height : const SizedBox(),
         SizedBox(
@@ -112,7 +108,7 @@ class CustomTextField extends StatelessWidget {
               FocusScope.of(context).requestFocus(FocusNode());
             },
             decoration: InputDecoration(
-              errorStyle:  TextStyle(
+              errorStyle: TextStyle(
                 fontSize: 12,
                 color: redSecondary,
                 fontWeight: w400,

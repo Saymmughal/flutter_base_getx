@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
     mediaQuerySize(context);
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: whiteStatusBar(),
-      child: Scaffold(body: Container(child: 'Splash Screen'.toText()).center),
+      child: Scaffold(body: Container(child: 'Splash Screen'.to16W600Text()).center),
     );
   }
 }

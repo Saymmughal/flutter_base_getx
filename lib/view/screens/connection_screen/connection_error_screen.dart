@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_base_getx/helper/router_navigator.dart';
 import 'package:flutter_base_getx/helper/routes_helper.dart';
 import 'package:flutter_base_getx/utils/constant.dart';
-import 'package:flutter_base_getx/utils/style.dart';
 import 'package:flutter_base_getx/view/widgets/custom_button.dart';
 import 'package:flutter_base_getx/view/widgets/extention/int_extension.dart';
 import 'package:flutter_base_getx/view/widgets/extention/string_extension.dart';
@@ -56,11 +55,9 @@ class NoConnection extends StatelessWidget {
               16.height,
               SizedBox(
                 width: 312,
-                child: args.message.toText(
+                child: args.message.to18W500Text(
                   textAlign: TextAlign.center,
                   maxLine: 2,
-                  fontSize: 18,
-                  fontWeight: w500,
                   color: whitePrimary,
                 ),
               ),

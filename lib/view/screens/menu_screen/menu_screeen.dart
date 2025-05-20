@@ -15,7 +15,7 @@ class MenuScreen extends StatelessWidget {
       value: whiteStatusBar(),
       child: Scaffold(
         backgroundColor: greenPrimary,
-        body: Container(child: 'Menu Screen'.toText()).center.onPress(() {
+        body: Container(child: 'Menu Screen'.to16W600Text()).center.onPress(() {
           loaderDialog();
           Future.delayed(const Duration(seconds: 2), () {
             Get.back();

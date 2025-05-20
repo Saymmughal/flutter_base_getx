@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         body:
             Container(
-              child: 'Home Screen'.toText().onPress(
+              child: 'Home Screen'.to16W600Text().onPress(
                 () => goToNamed(
                   RouterHelper.noConnectionScreen,
                   arguments: ConnectionModel(

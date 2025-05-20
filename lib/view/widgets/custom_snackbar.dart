@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_base_getx/utils/colors.dart';
-import 'package:flutter_base_getx/utils/style.dart';
 import 'package:flutter_base_getx/view/widgets/extention/string_extension.dart';
 import 'package:get/get.dart';
 
@@ -37,11 +36,9 @@ SnackBar _customSnackBar(BuildContext context, String message, bool isError) {
       child: Center(
         child: Padding(
           padding: const EdgeInsets.all(10.0),
-          child: message.toText(
+          child: message.to14W500Text(
             textAlign: TextAlign.start,
-            fontSize: 14,
             color: whitePrimary,
-            fontWeight: w500,
           ),
         ),
       ),
